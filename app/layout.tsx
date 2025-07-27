@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FloatingNav } from "@/components/ui/floating-navbar";
+import { HomeIcon, Icon, MailIcon, UserIcon } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} `}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} `}>
+        <div className="menu-bar-container">
+          <FloatingNav
+            navItems={[
+              { name: "Home", link: "#", icon: <HomeIcon /> },
+              { name: "About", link: "#", icon: <UserIcon /> },
+              { name: "Contact us", link: "#", icon: <MailIcon /> },
+            ]}
+            className="dark bg-black"
+          />
+        </div>
         {children}
       </body>
     </html>

@@ -412,7 +412,7 @@ const IconGrid = () => {
 
 export default function NexusOrbSup() {
   return (
-    <div className="w-full flex items-center justify-center font-sans p-4 sm:p-8 overflow-hidden">
+    <div className="w-screen mt-15 md:mt-0 flex items-center justify-center font-sans sm:p-8 overflow-hidden">
         <style>
             {`
                 @keyframes float {

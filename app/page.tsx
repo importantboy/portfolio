@@ -7,8 +7,8 @@ import { twMerge } from "tailwind-merge";
 import { BackgroundLinesDemo } from "@/components/HeroContainer";
 export default function Home() {
   return (
-    <header className="flex flex-col">
-      <div className="bg_container min-h-screen bg-orange-600">
+    <header>
+      <div className="bg_container min-h-screen bg-orange-300">
             <BackgroundLinesDemo />
       </div>
     </header>
