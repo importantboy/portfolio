@@ -5,12 +5,17 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { twMerge } from "tailwind-merge";
 import { BackgroundLinesDemo } from "@/components/HeroContainer";
+import AboutComp from "@/components/Aboutcomponent/AboutComp";
+// import AboutPageComp from "@/components/Aboutcomponent/AboutPage";
 export default function Home() {
   return (
-    <header>
-      <div className="bg_container min-h-screen bg-orange-300">
-            <BackgroundLinesDemo />
-      </div>
-    </header>
+    <main>
+      <header className="bg_container min-h-screen bg-orange-300">
+        <BackgroundLinesDemo />
+      </header>
+      <section className="min-h-screen bg-black dark">
+        <AboutComp />
+      </section>
+    </main>
   );
 }
