@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, LayoutGroup } from "motion/react";
 import { cn } from "@/lib/utils";
-
+  
 export const FlipWords = ({
   words,
   duration = 3000,
@@ -86,7 +86,7 @@ export const FlipWords = ({
                 }}
                 className="inline-block"
               >
-                {letter}
+                 {letter}
               </motion.span>
             ))}
             <span className="inline-block">&nbsp;</span>

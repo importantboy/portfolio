@@ -8,7 +8,9 @@ export function TextGenerateEffectDemo() {
   return (
     <TextGenerateEffect
       words={words}
-      className={cn("text-2xl sm:text-5xl md:6xl font-light tracking-wider")}
+      className={cn(
+        "text-2xl sm:text-5xl md:text-6xl font-light tracking-wider"
+      )}
     />
   );
 }
