@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CardSpotlight } from "../ui/card-spotlight";
 import { HeroHighlight } from "../ui/hero-highlight";
 
 export default function AboutComp() {
