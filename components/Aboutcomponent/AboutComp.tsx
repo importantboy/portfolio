@@ -4,8 +4,9 @@ import { HeroHighlight } from "../ui/hero-highlight";
 
 export default function AboutComp() {
   return (
-    <div className="dark min-h-screen">
+    <div className="dark min-h-screen" id="about">
       <HeroHighlight>
+         
         <h2 className="text-3xl md:text-6xl text-gray-600 dark:text-white py-4 text-center">
           About Me
         </h2>
@@ -13,7 +14,7 @@ export default function AboutComp() {
         <div className="w-[80vw] md:w-[70vw] h-[70vh] rounded-xl flex flex-col md:flex-row gap-4  ">
           <div className="card-left md:w-[35%]  h-[50%] md:h-full overflow-hidden rounded-md">
             <Image
-              src={"/linkedinProfilepicture.jpeg"}
+              src={"/linkedinProfilepicture.png"}
               alt="profile image"
               width={500}
               height={600}
@@ -26,7 +27,7 @@ export default function AboutComp() {
             md:h-full text-white p-5 flex flex-col justify-center
             "
           >
-            <div className="bg-white/50 absolute backdrop-blur-2xl w-full h-full -z-1"></div>
+            <div className="absolute w-full h-full -z-1"></div>
             <h2 className="text-4xl font-light md:text-5xl my-6 capitalize ">
               who am i ?
             </h2>

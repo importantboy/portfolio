@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import './styles/globals.css';
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { HomeIcon, Icon, MailIcon, UserIcon } from "lucide-react";
 
@@ -31,10 +31,10 @@ export default function RootLayout({
           <FloatingNav
             navItems={[
               { name: "Home", link: "#", icon: <HomeIcon /> },
-              { name: "About", link: "#", icon: <UserIcon /> },
+              { name: "About", link: "#about", icon: <UserIcon /> },
               { name: "Contact us", link: "#", icon: <MailIcon /> },
             ]}
-            className="dark bg-black"
+            className="dark bg-black "
           />
         </div>
         {children}
