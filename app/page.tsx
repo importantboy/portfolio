@@ -6,10 +6,12 @@ import { cn } from "@/lib/utils";
 import { twMerge } from "tailwind-merge";
 import { BackgroundLinesDemo } from "@/components/HeroContainer";
 import AboutComp from "@/components/Aboutcomponent/AboutComp";
+import FluidCursor from "@/components/cursor";
 // import AboutPageComp from "@/components/Aboutcomponent/AboutPage";
 export default function Home() {
   return (
     <main>
+      <FluidCursor />
       <header className="bg_container min-h-screen bg-orange-300">
         <BackgroundLinesDemo />
       </header>
