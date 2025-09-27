@@ -10,7 +10,7 @@ import FluidCursor from "@/components/cursor";
 // import AboutPageComp from "@/components/Aboutcomponent/AboutPage";
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <FluidCursor />
       <header className="bg_container min-h-screen bg-orange-300">
         <BackgroundLinesDemo />

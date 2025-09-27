@@ -5,32 +5,31 @@ export default function AboutComp() {
   return (
     <div className="dark min-h-screen" id="about">
       <HeroHighlight>
-         
-        <h2 className="text-3xl md:text-6xl text-gray-600 dark:text-white py-4 text-center">
+
+        <h2 className="text-4xl text-semibold md:text-6xl text-gray-600 dark:text-white py-4 my-5 text-center">
           About Me
         </h2>
 
-        <div className="w-[80vw] md:w-[70vw] h-[70vh] rounded-xl flex flex-col md:flex-row gap-4  ">
-          <div className="card-left md:w-[35%]  h-[50%] md:h-full overflow-hidden rounded-md">
+        <div className="w-[80vw] md:w-[70vw] rounded-xl flex flex-col md:flex-row gap-4  ">
+          <div className="card-left md:w-[35%]  h-[50%] md:h-full overflow-hidden rounded-md m-auto">
             <Image
-              src={"/linkedinProfilepicture.png"}
+              src={"/profile.png"}
               alt="profile image"
-              width={500}
-              height={600}
-              // height={undefined}
-              className="rounded-ss-[70%]"
+              width={100}
+              height={100}
+              className="w-[200px] lg:w-2xl rounded-ss-[70%]"
             />
           </div>
           <div
-            className="relative card-right md:w-[70%] overflow-hidden  h-[70%]
-            md:h-full text-white p-5 flex flex-col justify-center
+            className="relative card-right h-full md:w-[70%] 
+            text-white p-5 flex flex-col justify-center
+            items-center gap-10
             "
           >
-            <div className="absolute w-full h-full -z-1"></div>
-            <h2 className="text-4xl font-light md:text-5xl my-6 capitalize ">
+            <h2 className="text-4xl font-light md:text-5xl my-3 capitalize">
               who am i ?
             </h2>
-            <p className="text-xl">
+            <p className="text-sm md:text-xl ">
               Hi, I’m <b>Rahul</b> — a software engineer passionate about
               crafting modern and scalable web applications. With a background
               in BCA at SVIET, I specialize in React, Node.js, MongoDB, and
