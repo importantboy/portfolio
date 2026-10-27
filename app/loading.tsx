@@ -1,0 +1,1 @@
+export default function Loading() { return <main id="main-content" className="container loading-page" aria-busy="true"><span className="mono accent">ONE MOMENT</span><h1>Connecting<br />the dots<span className="accent">.</span></h1><div className="loading-line" /><p>Getting the good stuff ready.</p></main>; }

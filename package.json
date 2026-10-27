@@ -6,9 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint app components/portfolio lib/github.ts lib/profile.ts lib/contact.ts",
+    "typecheck": "tsc --noEmit",
+    "refresh:projects": "node scripts/refresh-github-snapshot.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
     "@react-three/fiber": "^9.3.0",
     "@tailwindcss/cli": "^4.1.11",
     "@tsparticles/engine": "^3.8.1",
@@ -19,7 +24,7 @@
     "lucide-react": "^0.526.0",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.12",
-    "next": "15.4.4",
+    "next": "^15.5.28",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "tailwind-merge": "^3.3.1",
@@ -33,9 +38,12 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.178.1",
     "eslint": "^9",
-    "eslint-config-next": "15.4.4",
+    "eslint-config-next": "^15.5.28",
     "tailwindcss": "^4.1.11",
     "tw-animate-css": "^1.3.6",
     "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "postcss": "8.5.23"
   }
 }
